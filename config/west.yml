@@ -6,8 +6,3 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: Cyboard-DigitalTailor
       revision: startup_optimization
-```
-
-**`config/imprint.conf` in `imprint-zmk-config`** (remove `ZMK_RGB_UNDERGLOW` from here since it's already set in the shield's `Kconfig.defconfig` unconditionally for both sides, making this redundant and causing the USB conflict on the right):
-
-```
