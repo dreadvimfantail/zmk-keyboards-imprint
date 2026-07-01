@@ -2,19 +2,19 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: badjeff
-      url-base: https://github.com/badjeff
     - name: Cyboard-DigitalTailor
       url-base: https://github.com/Cyboard-DigitalTailor
+    - name: dreadvimfantail
+      url-base: https://github.com/dreadvimfantail
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: Cyboard-DigitalTailor
-      revision: startup_optimization
+    - name: zmk-keyboards
+      remote: dreadvimfantail
+      repo-path: zmk-keyboards-imprint
+      revision: main
+      import: config/west.yml
   self:
     path: config
