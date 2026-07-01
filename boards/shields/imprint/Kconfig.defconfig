@@ -26,12 +26,15 @@ config SPI
     default y
 
 config PMW3610
+    bool
     default y
 
 config PMW3610_SWAP_XY
+    bool
     default y
 
 config PMW3610_REPORT_INTERVAL_MIN
+    int
     default 8
 
 endif
