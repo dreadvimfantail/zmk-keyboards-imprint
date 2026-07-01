@@ -13,6 +13,7 @@
         compatible = "zmk,physical-layouts";
 
         imprint_letters_only_layout: imprint_letters_only_layout {
+            compatible = "zmk,physical-layout";
             display-name = "Letters Only";
             transform = <&imprint_letters_only>;
 
